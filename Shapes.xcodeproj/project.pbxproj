@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2718D54213D1C7C7B4C71529 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18621F47F69AF49CDDB8CAD6 /* ShapeView.swift */; };
 		2D8B0E9255ACF553648C4B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50198A883BC54C1D56CC55F1 /* Main.storyboard */; };
+		4796FC930167C4609D3968F5 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817CE671B2B33BB3BCBB1A8 /* Circle.swift */; };
 		5AACE7126B39DE21F4487EC2 /* ShapesAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC27FDF3CE5AAAC7F5BCD2CF /* ShapesAppDelegate.swift */; };
 		7B5F445ECBCC1AA623BB3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6213AFC30E34F306163672B /* LaunchScreen.storyboard */; };
+		BF717F5823316BBA004A5485 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF717F5723316BBA004A5485 /* NumberView.swift */; };
+		C80C9B1ECB38557AFA859157 /* Decimal+DoubleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE37672BE8998793A138EC3 /* Decimal+DoubleValue.swift */; };
 		F47F90E4F39C8446BFCA5128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251E1E66857D751F82610819 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A5ABAA1453F21B8811E133B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		162A127BCC09145B588DAA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18621F47F69AF49CDDB8CAD6 /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		251E1E66857D751F82610819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50198A883BC54C1D56CC55F1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7817CE671B2B33BB3BCBB1A8 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		B18EA97E17F56E574B6EBEFC /* Shapes.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Shapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE37672BE8998793A138EC3 /* Decimal+DoubleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+DoubleValue.swift"; sourceTree = "<group>"; };
+		BF717F5723316BBA004A5485 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		DC27FDF3CE5AAAC7F5BCD2CF /* ShapesAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -26,8 +34,18 @@
 		250DD61C0BF9FC6EBF1E7760 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7817CE671B2B33BB3BCBB1A8 /* Circle.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		31BB7171F4E7E23F5265F609 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18621F47F69AF49CDDB8CAD6 /* ShapeView.swift */,
+				BF717F5723316BBA004A5485 /* NumberView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5EC087B0F9615ACD236FE4CD /* Assets */ = {
@@ -40,16 +58,10 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		6206186F088793ED1661DD22 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		746C0526549BF323FCAEE882 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BAE37672BE8998793A138EC3 /* Decimal+DoubleValue.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -85,8 +97,8 @@
 				9DB94531767C8F436DA1160A /* App */,
 				5EC087B0F9615ACD236FE4CD /* Assets */,
 				746C0526549BF323FCAEE882 /* Common */,
-				6206186F088793ED1661DD22 /* Controller */,
 				250DD61C0BF9FC6EBF1E7760 /* Model */,
+				31BB7171F4E7E23F5265F609 /* Views */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = A736FA08F10C99B0D40AFD0E;
@@ -152,6 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4796FC930167C4609D3968F5 /* Circle.swift in Sources */,
+				C80C9B1ECB38557AFA859157 /* Decimal+DoubleValue.swift in Sources */,
+				2718D54213D1C7C7B4C71529 /* ShapeView.swift in Sources */,
+				BF717F5823316BBA004A5485 /* NumberView.swift in Sources */,
 				5AACE7126B39DE21F4487EC2 /* ShapesAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,10 +193,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Shapes/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Shapes;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -227,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -285,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,10 +322,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Shapes/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Shapes;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

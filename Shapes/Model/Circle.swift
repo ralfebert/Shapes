@@ -20,21 +20,27 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import SwiftUI
+import Foundation
 
-@UIApplicationMain
-class ShapesAppDelegate: UIResponder, UIApplicationDelegate {
+struct Circle {
 
-    var window: UIWindow?
+    var radius: Decimal = 1
+    var diameter: Decimal {
+        get {
+            self.radius * 2
+        }
+        set {
+            self.radius = newValue / 2
+        }
+    }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        let window = UIWindow()
-        window.rootViewController = UIHostingController(rootView: ShapeView())
-        window.makeKeyAndVisible()
-        self.window = window
-
-        return true
+    var area: Decimal {
+        get {
+            .pi * pow(self.radius, 2)
+        }
+        set {
+            self.radius = Decimal((newValue / .pi).doubleValue.squareRoot())
+        }
     }
 
 }

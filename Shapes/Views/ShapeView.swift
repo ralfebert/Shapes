@@ -20,21 +20,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+import Foundation
 import SwiftUI
 
-@UIApplicationMain
-class ShapesAppDelegate: UIResponder, UIApplicationDelegate {
+struct ShapeView: View {
+    var circle = Circle(radius: 1)
 
-    var window: UIWindow?
+    var body: some View {
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        let window = UIWindow()
-        window.rootViewController = UIHostingController(rootView: ShapeView())
-        window.makeKeyAndVisible()
-        self.window = window
-
-        return true
+        VStack(alignment: .leading, spacing: 10) {
+            NumberView(label: "Radius", value: circle.radius)
+            NumberView(label: "Durchmesser", value: circle.diameter)
+            NumberView(label: "Fläche", value: circle.area)
+            Spacer()
+        }.padding(10)
     }
 
+}
+
+struct ShapeView_Previews: PreviewProvider {
+    static var previews: some View {
+        ShapeView()
+    }
 }

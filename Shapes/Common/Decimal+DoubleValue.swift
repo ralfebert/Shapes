@@ -20,21 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import SwiftUI
+import Foundation
 
-@UIApplicationMain
-class ShapesAppDelegate: UIResponder, UIApplicationDelegate {
+extension Decimal {
 
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        let window = UIWindow()
-        window.rootViewController = UIHostingController(rootView: ShapeView())
-        window.makeKeyAndVisible()
-        self.window = window
-
-        return true
+    var doubleValue: Double {
+        return NSDecimalNumber(decimal: self).doubleValue
     }
 
 }

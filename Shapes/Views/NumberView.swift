@@ -22,19 +22,29 @@
 
 import SwiftUI
 
-@UIApplicationMain
-class ShapesAppDelegate: UIResponder, UIApplicationDelegate {
+struct NumberView: View {
 
-    var window: UIWindow?
+    var label: String
+    var value: Decimal
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(label + ":")
+            Text(Self.numberFormatter.string(for: value) ?? "")
+        }
 
-        let window = UIWindow()
-        window.rootViewController = UIHostingController(rootView: ShapeView())
-        window.makeKeyAndVisible()
-        self.window = window
-
-        return true
     }
 
+    static var numberFormatter: Formatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.generatesDecimalNumbers = true
+        return formatter
+    }()
+}
+
+struct NumberView_Previews: PreviewProvider {
+    static var previews: some View {
+        NumberView(label: "Area", value: 5)
+    }
 }
