@@ -12,7 +12,7 @@
 		4796FC930167C4609D3968F5 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817CE671B2B33BB3BCBB1A8 /* Circle.swift */; };
 		5AACE7126B39DE21F4487EC2 /* ShapesAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC27FDF3CE5AAAC7F5BCD2CF /* ShapesAppDelegate.swift */; };
 		7B5F445ECBCC1AA623BB3C57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6213AFC30E34F306163672B /* LaunchScreen.storyboard */; };
-		BF717F5823316BBA004A5485 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF717F5723316BBA004A5485 /* NumberView.swift */; };
+		BF717F5823316BBA004A5485 /* DecimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF717F5723316BBA004A5485 /* DecimalView.swift */; };
 		C80C9B1ECB38557AFA859157 /* Decimal+DoubleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE37672BE8998793A138EC3 /* Decimal+DoubleValue.swift */; };
 		F47F90E4F39C8446BFCA5128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251E1E66857D751F82610819 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 		7817CE671B2B33BB3BCBB1A8 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		B18EA97E17F56E574B6EBEFC /* Shapes.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Shapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE37672BE8998793A138EC3 /* Decimal+DoubleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+DoubleValue.swift"; sourceTree = "<group>"; };
-		BF717F5723316BBA004A5485 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		BF717F5723316BBA004A5485 /* DecimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalView.swift; sourceTree = "<group>"; };
 		DC27FDF3CE5AAAC7F5BCD2CF /* ShapesAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,7 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				18621F47F69AF49CDDB8CAD6 /* ShapeView.swift */,
-				BF717F5723316BBA004A5485 /* NumberView.swift */,
+				BF717F5723316BBA004A5485 /* DecimalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				4796FC930167C4609D3968F5 /* Circle.swift in Sources */,
 				C80C9B1ECB38557AFA859157 /* Decimal+DoubleValue.swift in Sources */,
 				2718D54213D1C7C7B4C71529 /* ShapeView.swift in Sources */,
-				BF717F5823316BBA004A5485 /* NumberView.swift in Sources */,
+				BF717F5823316BBA004A5485 /* DecimalView.swift in Sources */,
 				5AACE7126B39DE21F4487EC2 /* ShapesAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
