@@ -6,7 +6,7 @@ import Foundation
 struct Circle {
 
     var radius: Decimal = 1
-    
+
     var diameter: Decimal {
         get {
             self.radius * 2

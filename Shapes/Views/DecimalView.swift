@@ -23,7 +23,7 @@ struct DecimalView: View {
     }()
 }
 
-struct NumberView_Previews: PreviewProvider {
+struct DecimalView_Previews: PreviewProvider {
     static var previews: some View {
         DecimalView(caption: "Area", value: 5)
     }
