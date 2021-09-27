@@ -5,18 +5,16 @@ import Foundation
 import SwiftUI
 
 struct ShapeView: View {
-    
     var circle = Circle(radius: 1)
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            DecimalView(caption: "Radius", value: circle.radius)
-            DecimalView(caption: "Durchmesser", value: circle.diameter)
-            DecimalView(caption: "Fläche", value: circle.area)
+            NumberValueView(imageName: "radius", value: circle.radius)
+            NumberValueView(imageName: "diameter", value: circle.diameter)
+            NumberValueView(imageName: "area", value: circle.area)
         }
         .padding(10)
     }
-
 }
 
 struct ShapeView_Previews: PreviewProvider {

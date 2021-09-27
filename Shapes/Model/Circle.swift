@@ -4,10 +4,9 @@
 import Foundation
 
 struct Circle {
+    var radius: Double = 1
 
-    var radius: Decimal = 1
-
-    var diameter: Decimal {
+    var diameter: Double {
         get {
             self.radius * 2
         }
@@ -16,13 +15,12 @@ struct Circle {
         }
     }
 
-    var area: Decimal {
+    var area: Double {
         get {
             .pi * pow(self.radius, 2)
         }
         set {
-            self.radius = Decimal((newValue / .pi).doubleValue.squareRoot())
+            self.radius = (newValue / .pi).squareRoot()
         }
     }
-
 }

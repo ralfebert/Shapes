@@ -1,0 +1,5 @@
+--header "© 2019 Ralf Ebert — iOS Example Project: Shapes\nLicense: https://opensource.org/licenses/MIT"
+--swiftversion 5.5
+--stripunusedargs unnamed-only
+--self insert
+--disable andOperator
