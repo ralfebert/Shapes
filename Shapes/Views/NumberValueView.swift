@@ -10,7 +10,7 @@ struct NumberValueView: View {
     var body: some View {
         HStack {
             Image(imageName)
-            Text("\(value)")
+            Text(value, format: .number)
         }
     }
 }
