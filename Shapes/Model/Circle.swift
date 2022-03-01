@@ -5,22 +5,9 @@ import Foundation
 
 struct Circle {
     var radius: Double = 1
-
-    var diameter: Double {
-        get {
-            self.radius * 2
-        }
-        set {
-            self.radius = newValue / 2
-        }
-    }
-
-    var area: Double {
-        get {
-            .pi * pow(self.radius, 2)
-        }
-        set {
-            self.radius = (newValue / .pi).squareRoot()
-        }
-    }
+    
+    // TODO: diameter property
+    // TODO: area property
+    // area = .pi * pow(radius, 2)
+    // radius = (area / .pi).squareRoot()
 }
