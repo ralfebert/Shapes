@@ -4,7 +4,14 @@
 import Foundation
 
 struct Circle {
-    var radius: Double = 1
+    var radius: Double = 1 {
+        willSet {
+            print("Radius will change from \(radius) to \(newValue)")
+        }
+        didSet {
+            print("Radius did change from \(oldValue) to \(radius)")
+        }
+    }
 
     var diameter: Double {
         get {
