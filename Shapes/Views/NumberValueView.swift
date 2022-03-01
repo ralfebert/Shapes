@@ -5,18 +5,18 @@ import SwiftUI
 
 struct NumberValueView: View {
     var imageName: String
-    var value: Double
+    @Binding var value: Double
 
     var body: some View {
         HStack {
             Image(imageName)
-            Text(value, format: .number)
+            TextField("Value", value: $value, format: .number)
         }
     }
 }
 
 struct NumberValueView_Previews: PreviewProvider {
     static var previews: some View {
-        NumberValueView(imageName: "diameter", value: 5)
+        NumberValueView(imageName: "diameter", value: .constant(5))
     }
 }
