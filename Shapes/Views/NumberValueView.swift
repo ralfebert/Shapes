@@ -18,5 +18,6 @@ struct NumberValueView: View {
 struct NumberValueView_Previews: PreviewProvider {
     static var previews: some View {
         NumberValueView(imageName: "diameter", value: 5)
+            .previewLayout(.sizeThatFits)
     }
 }
